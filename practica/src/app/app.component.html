@@ -1,0 +1,40 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<app-header></app-header>
+
+<div class="container-fluid">
+    <app-body></app-body>
+
+    <br>
+    <div class="row">
+        <div class="col-lg-12">
+            <div style="text-align:center">
+                <small>{{this.template_literal}}</small>
+                <br>
+                <small>{{this.f_parametros_opcionales}}</small>
+                <br>
+                <small>{{this.f_flechas}}</small>
+                <br>
+                <small>{{this.destructuracion_objeto}}</small>
+                <br>
+                <small>{{this.destructuracion_array}}</small>
+                <br>
+                <small>{{this.ejemplo_interface}}</small>
+            </div>
+        </div>
+
+        <div class="col-lg-6">      
+            <h1>Seccion 4</h1>
+            <app-navbar></app-navbar>
+        </div>
+
+        <div class="col-lg-6">      
+            <h1>Seccion 5</h1>
+            <app-seccion5></app-seccion5>
+        </div>
+
+        <div class="col-lg-6">      
+            <app-footer></app-footer>
+            <router-outlet></router-outlet>
+        </div>
+    </div>            
+</div>

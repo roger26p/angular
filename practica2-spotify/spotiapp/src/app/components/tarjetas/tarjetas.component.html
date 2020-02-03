@@ -1,0 +1,11 @@
+<div class="card-columns m-5">
+
+  <div class="card" (click)="VerArtista(item)" *ngFor="let item of items" style="cursor:pointer;">
+    <img [src]="item.images | noimage" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{item.name}}</h5>
+      <p class="card-text" *ngFor="let artistas of item.artists">{{artistas.name}}</p>
+    </div>
+  </div>
+
+</div>  

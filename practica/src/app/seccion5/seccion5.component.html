@@ -1,0 +1,126 @@
+<h1>Pipes</h1>
+<hr>
+
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Variable</th>
+      <th scope="col">Pipes</th>
+      <th scope="col">Resultado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>{{texto}}</td>
+      <td>uppercase</td>
+      <td>{{texto | uppercase}}</td>
+    </tr>
+
+    <tr>
+      <td>{{texto}}</td>
+      <td>lowercase</td>
+      <td>{{texto | lowercase}}</td>
+    </tr>
+
+    <tr>
+      <td>{{texto}}</td>
+      <td>slice:2</td>
+      <td>{{texto | slice:2}}</td>
+    </tr> 
+    
+    <tr>
+      <td>{{texto}}</td>
+      <td>slice:0:2</td>
+      <td>{{texto | slice:0:2}}</td>
+    </tr> 
+
+    <tr>
+      <td>{{array_slice}}</td>
+      <td>slice:0:5</td>
+      <td>{{array_slice | slice:0:5}}</td>
+    </tr> 
+    
+
+    <tr>
+      <td>{{pi}}</td>
+      <td>number</td>
+      <td>{{pi | number}}</td>
+    </tr> 
+
+    <tr>
+      <td>{{pi}}</td>
+      <td>number:'1.0-2'</td>
+      <td>{{pi | number:'1.0-2'}}</td>
+    </tr> 
+
+    <tr>
+      <td>{{porcentaje}}</td>
+      <td>percent</td>
+      <td>{{porcentaje | percent}}</td>
+    </tr> 
+
+    <tr>
+      <td>{{porcentaje}}</td>
+      <td>percent:'2.2-2'</td>
+      <td>{{porcentaje | percent:'2.2-2'}}</td>
+    </tr> 
+
+    <tr>
+      <td>{{salario}}</td>
+      <td>currency</td>
+      <td>{{salario | currency}}</td>
+    </tr> 
+
+    <tr>
+      <td>{{salario}}</td>
+      <td>currency:'CLP':true:'4.0-2'</td>
+      <td>{{salario | currency:'CLP':true:'4.0-2'}}</td>
+    </tr> 
+
+
+    <tr>
+      <td>{{personaje}}</td>
+      <td>json</td>
+      <td>{{personaje | json}}</td>
+    </tr> 
+
+    <tr>
+      <td>{{valor_promesa}}</td>
+      <td>async</td>
+      <td>{{valor_promesa | async}}</td>
+    </tr> 
+
+    <tr>
+      <td>{{fecha}}</td>
+      <td>date</td>
+      <td>{{fecha | date}}</td>
+    </tr> 
+
+    <tr>
+      <td>{{fecha}}</td>
+      <td>date:'medium'</td>
+      <td>{{fecha | date:'medium'}}</td>
+    </tr> 
+
+    <tr>
+      <td>{{nombre_completo}}</td>
+      <td>Capitalizado</td>
+      <td>{{nombre_completo | capitalizado}}</td>
+    </tr> 
+
+    <tr>
+      <td>{{nombre_completo}}</td>
+      <td>Capitalizado:argumento 1</td>
+      <td>{{nombre_completo | capitalizado:false}}</td>
+    </tr> 
+
+    <tr>
+      <td>{{nombre_pass}}</td>
+      <td>Password:argumento 1 <button class="btn btn-primary" (click)="ver_pass()">Ver</button></td>
+      <td>{{nombre_pass | pass:ver}}</td>
+    </tr> 
+
+  </tbody>
+</table>
+
+  

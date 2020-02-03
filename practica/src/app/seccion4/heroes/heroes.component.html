@@ -1,0 +1,28 @@
+<h1>Heroes</h1>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="card-columns">
+        <div class="card" *ngFor="let heroe of heroes; let i =index">
+          <img src="{{heroe.img}}" class="card-img-top" alt="{{heroe.nombre}}">
+          <div class="card-body">
+            <h5 class="card-title">{{heroe.nombre}}</h5>
+            <p class="card-text">{{heroe.bio}}</p>
+            <p class="card-text">{{heroe.aparicion}}</p>
+            <button (click)="verHeroe(i)" class="btn btn-outline-primary">Ver mas</button>
+            <!--<a [routerLink]="['/heroe',i]" class="btn btn-outline-primary">Ver mas</a>-->
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">{{heroe.casa}}</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>      
+</div> 
+
+
+<br><br>
+<h1>Explicacion del @input</h1>
+<app-input (PruebaArray)="datos_hijo($event)" [heroe]="heroe" *ngFor="let heroe of heroes; let i =index"></app-input>
+

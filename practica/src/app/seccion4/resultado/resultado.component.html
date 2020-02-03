@@ -1,0 +1,25 @@
+<h1>{{this.resultado[0].nombre | uppercase}} <small>{{this.resultado[0].aparicion | date:'y'}}</small></h1>
+<hr>
+
+<div class="row">
+  <div class="col-md-4">
+    <img src="{{this.resultado[0].img}}" class="img-fluid">
+    <br><br>
+  </div>
+
+  <div class="col-md-8">
+    <h3>{{this.resultado[0].nombre}}</h3>
+    <hr>
+
+    <p>{{this.resultado[0].bio}}</p>
+
+    <div>
+      <img *ngIf="this.resultado[0].casa=='Marvel'" src="assets/img/marvel-logo.png" class="img-fluid">
+      <img *ngIf="this.resultado[0].casa=='DC'" src="assets/img/dc-logo.jpg" class="img-fluid">
+    </div>
+
+    <a [routerLink]="['/heroes']" class="btn btn-outline-danger">Regresar</a>
+
+  </div>  
+
+</div>
